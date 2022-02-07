@@ -16,5 +16,43 @@ namespace LabNo2
         {
             InitializeComponent();
         }
+
+        //botón "Ir"
+        private void buttonIr_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Navigate(new Uri(comboBox1.SelectedItem.ToString()));
+        }
+
+        //botones de "Navegar"
+
+        //inicio
+        private void inicioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            webBrowser1.GoHome();
+        }
+
+        //ir átras
+        private void irAtrásToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            webBrowser1.GoBack();
+        }
+
+        //ir adelante
+        private void irAdelanteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            webBrowser1.GoForward();
+        }
+
+        //salir
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            comboBox1.SelectedIndex = 0;
+            webBrowser1.GoHome();
+        }
     }
 }

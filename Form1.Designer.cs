@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.navegarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.inicioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -46,7 +47,7 @@
             this.navegarToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1904, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1264, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -64,27 +65,35 @@
             // 
             // inicioToolStripMenuItem
             // 
+            this.inicioToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("inicioToolStripMenuItem.Image")));
             this.inicioToolStripMenuItem.Name = "inicioToolStripMenuItem";
             this.inicioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.inicioToolStripMenuItem.Text = "Inicio";
+            this.inicioToolStripMenuItem.Click += new System.EventHandler(this.inicioToolStripMenuItem_Click);
             // 
             // irAtrásToolStripMenuItem
             // 
+            this.irAtrásToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("irAtrásToolStripMenuItem.Image")));
             this.irAtrásToolStripMenuItem.Name = "irAtrásToolStripMenuItem";
             this.irAtrásToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.irAtrásToolStripMenuItem.Text = "Ir Atrás";
+            this.irAtrásToolStripMenuItem.Click += new System.EventHandler(this.irAtrásToolStripMenuItem_Click);
             // 
             // irAdelanteToolStripMenuItem
             // 
+            this.irAdelanteToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("irAdelanteToolStripMenuItem.Image")));
             this.irAdelanteToolStripMenuItem.Name = "irAdelanteToolStripMenuItem";
             this.irAdelanteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.irAdelanteToolStripMenuItem.Text = "Ir Adelante";
+            this.irAdelanteToolStripMenuItem.Click += new System.EventHandler(this.irAdelanteToolStripMenuItem_Click);
             // 
             // salirToolStripMenuItem
             // 
+            this.salirToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("salirToolStripMenuItem.Image")));
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
             this.salirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.salirToolStripMenuItem.Text = "Salir";
+            this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
             // buttonIr
             // 
@@ -96,6 +105,7 @@
             this.buttonIr.TabIndex = 1;
             this.buttonIr.Text = "Ir";
             this.buttonIr.UseVisualStyleBackColor = false;
+            this.buttonIr.Click += new System.EventHandler(this.buttonIr_Click);
             // 
             // comboBox1
             // 
@@ -114,17 +124,17 @@
             // 
             // webBrowser1
             // 
-            this.webBrowser1.Location = new System.Drawing.Point(23, 143);
+            this.webBrowser1.Location = new System.Drawing.Point(45, 155);
             this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(1600, 760);
+            this.webBrowser1.Size = new System.Drawing.Size(1184, 542);
             this.webBrowser1.TabIndex = 3;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.ClientSize = new System.Drawing.Size(1264, 731);
             this.Controls.Add(this.webBrowser1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.buttonIr);
@@ -133,6 +143,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Explorador Web🦁";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
