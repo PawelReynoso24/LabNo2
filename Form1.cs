@@ -21,6 +21,7 @@ namespace LabNo2
         private void buttonIr_Click(object sender, EventArgs e)
         {
             webBrowser1.Navigate(new Uri(comboBox1.SelectedItem.ToString()));
+            //comboBox1.Visible = true;
         }
 
         //botones de "Navegar"

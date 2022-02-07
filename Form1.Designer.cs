@@ -113,10 +113,9 @@
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "https://www.google.com",
-            "https://www.mesoamericana.edu.gt",
-            "https://www.facebook.com",
             "https://www.youtube.com",
-            "https://twitter.com"});
+            "https://facebook.com",
+            "https://mesoamericana.edu.gt"});
             this.comboBox1.Location = new System.Drawing.Point(200, 44);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(668, 28);
