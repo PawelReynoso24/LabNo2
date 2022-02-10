@@ -20,7 +20,7 @@ namespace LabNo2
         //botón "Ir"
         private void buttonIr_Click(object sender, EventArgs e)
         {
-            webBrowser1.Navigate(new Uri(comboBox1.SelectedItem.ToString()));
+            webBrowser1.Navigate(new Uri(comboBox2.SelectedItem.ToString()));
             //comboBox1.Visible = true;
         }
 
@@ -52,7 +52,7 @@ namespace LabNo2
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            comboBox1.SelectedIndex = 0;
+            comboBox2.SelectedIndex = 0;
             webBrowser1.GoHome();
         }
     }
