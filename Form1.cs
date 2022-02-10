@@ -52,7 +52,7 @@ namespace LabNo2
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            comboBox1.SelectedIndex = 0;
+            comboBox123.SelectedIndex = 0;
             webBrowser1.GoHome();
         }
     }
