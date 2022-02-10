@@ -36,7 +36,6 @@
             this.irAdelanteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.buttonIr = new System.Windows.Forms.Button();
-            this.comboBox123 = new System.Windows.Forms.ComboBox();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.menuStrip1.SuspendLayout();
@@ -108,21 +107,6 @@
             this.buttonIr.UseVisualStyleBackColor = false;
             this.buttonIr.Click += new System.EventHandler(this.buttonIr_Click);
             // 
-            // comboBox123
-            // 
-            this.comboBox123.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox123.FormattingEnabled = true;
-            this.comboBox123.Items.AddRange(new object[] {
-            "https://www.google.com",
-            "https://www.youtube.com",
-            "https://facebook.com",
-            "https://mesoamericana.edu.gt",
-            ""});
-            this.comboBox123.Location = new System.Drawing.Point(227, 107);
-            this.comboBox123.Name = "comboBox123";
-            this.comboBox123.Size = new System.Drawing.Size(668, 28);
-            this.comboBox123.TabIndex = 2;
-            // 
             // webBrowser1
             // 
             this.webBrowser1.Location = new System.Drawing.Point(45, 155);
@@ -152,7 +136,6 @@
             this.ClientSize = new System.Drawing.Size(1264, 731);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.webBrowser1);
-            this.Controls.Add(this.comboBox123);
             this.Controls.Add(this.buttonIr);
             this.Controls.Add(this.menuStrip1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -176,7 +159,6 @@
         private System.Windows.Forms.ToolStripMenuItem irAdelanteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
         private System.Windows.Forms.Button buttonIr;
-        private System.Windows.Forms.ComboBox comboBox123;
         private System.Windows.Forms.WebBrowser webBrowser1;
         private System.Windows.Forms.ComboBox comboBox1;
     }
