@@ -113,10 +113,11 @@
             this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
+            "https://www.google.com",
             "https://www.youtube.com",
             "https://facebook.com",
             "https://mesoamericana.edu.gt",
-            "https://www.google.com"});
+            ""});
             this.comboBox1.Location = new System.Drawing.Point(200, 44);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(668, 28);
@@ -133,6 +134,11 @@
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "https://www.google.com",
+            "a",
+            "sda",
+            "asd"});
             this.comboBox2.Location = new System.Drawing.Point(247, 113);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(333, 21);
