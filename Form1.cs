@@ -20,8 +20,28 @@ namespace LabNo2
         //botón "Ir"
         private void buttonIr_Click(object sender, EventArgs e)
         {
-            webBrowser1.Navigate(new Uri(comboBox1.SelectedItem.ToString()));
-            //comboBox1.Visible = true;
+            String link = "";
+
+            if(comboBox1.Text != null)
+            {
+                link = comboBox1.Text;
+            }
+            else if(comboBox1.SelectedItem != null)
+            {
+                link = comboBox1.SelectedItem.ToString();
+            }
+
+            if(!link.Contains("."))
+            {
+                link = "https://www.google.com/search?q=" + link;
+            }
+            if(!link.Contains("https://"))
+            {
+                link = "https://" + link;
+            }
+
+            webBrowser1.Navigate(new Uri(link));
+            
         }
 
         //botones de "Navegar"
