@@ -59,15 +59,16 @@
             this.irAdelanteToolStripMenuItem,
             this.salirToolStripMenuItem});
             this.navegarToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.navegarToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("navegarToolStripMenuItem.Image")));
             this.navegarToolStripMenuItem.Name = "navegarToolStripMenuItem";
-            this.navegarToolStripMenuItem.Size = new System.Drawing.Size(72, 20);
+            this.navegarToolStripMenuItem.Size = new System.Drawing.Size(88, 20);
             this.navegarToolStripMenuItem.Text = "Navegar";
             // 
             // inicioToolStripMenuItem
             // 
             this.inicioToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("inicioToolStripMenuItem.Image")));
             this.inicioToolStripMenuItem.Name = "inicioToolStripMenuItem";
-            this.inicioToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
+            this.inicioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.inicioToolStripMenuItem.Text = "Inicio";
             this.inicioToolStripMenuItem.Click += new System.EventHandler(this.inicioToolStripMenuItem_Click);
             // 
@@ -99,11 +100,11 @@
             // 
             this.buttonIr.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.buttonIr.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonIr.Image = ((System.Drawing.Image)(resources.GetObject("buttonIr.Image")));
             this.buttonIr.Location = new System.Drawing.Point(883, 44);
             this.buttonIr.Name = "buttonIr";
-            this.buttonIr.Size = new System.Drawing.Size(70, 33);
+            this.buttonIr.Size = new System.Drawing.Size(78, 47);
             this.buttonIr.TabIndex = 1;
-            this.buttonIr.Text = "Ir";
             this.buttonIr.UseVisualStyleBackColor = false;
             this.buttonIr.Click += new System.EventHandler(this.buttonIr_Click);
             // 
@@ -123,9 +124,9 @@
             "https://www.msn.com",
             "https://www.google.com",
             "https://www.youtube.com",
-            "https://facebook.com",
-            "https://mesoamericana.edu.gt"});
-            this.comboBox1.Location = new System.Drawing.Point(227, 44);
+            "https://www.facebook.com",
+            "https://www.mesoamericana.edu.gt"});
+            this.comboBox1.Location = new System.Drawing.Point(224, 54);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(636, 28);
             this.comboBox1.TabIndex = 4;
