@@ -67,12 +67,9 @@ namespace LabNo2
 
             if(yaEsta == 0)
             {
-                comboBox1.Items.Add(link);
+                comboBox1.Items.Add(link);//agrega datos al combobox
                 Guardar("Historial de Navegación.txt", link);
             }
-
-            comboBox1.Items.Add(link);//agrega datos al combobox
-            Guardar("Historial de Navegación.txt", link);
         }
 
         //botones de "Navegar"
