@@ -56,6 +56,21 @@ namespace LabNo2
 
             webBrowser1.Navigate(new Uri(link));
 
+            //verificar si hay o no hay una búsqueda repetida
+            int yaEsta = 0;//bandera
+
+            for(int i = 0; i < comboBox1.Items.Count; i++)
+            {
+                if(link == comboBox1.Items[i].ToString())
+                yaEsta++;
+            }
+
+            if(yaEsta == 0)
+            {
+                comboBox1.Items.Add(link);
+                Guardar("Historial de Navegación.txt", link);
+            }
+
             comboBox1.Items.Add(link);//agrega datos al combobox
             Guardar("Historial de Navegación.txt", link);
         }
