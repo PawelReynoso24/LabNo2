@@ -21,7 +21,7 @@ namespace LabNo2
         private void Guardar(string fileName, string texto)
         {
             //Abrir el archivo: Write sobreescribe el archivo, Append agrega los datos al final del archivo
-            FileStream stream = new FileStream(fileName, FileMode.OpenOrCreate, FileAccess.Write);
+            FileStream stream = new FileStream(fileName, FileMode.Append, FileAccess.Write);
             //Crear un objeto para escribir el archivo
             StreamWriter writer = new StreamWriter(stream);
             //Usar el objeto para escribir al archivo, WriteLine, escribe linea por linea
@@ -86,10 +86,31 @@ namespace LabNo2
             this.Close();
         }
 
+        private void Leer(String fileName)
+        {
+            //Abrimos el archivo, en este caso lo abrimos para lectura
+            FileStream stream = new FileStream(fileName, FileMode.Open, FileAccess.Read);
+            StreamReader reader = new StreamReader(stream);
+
+            //Un ciclo para leer el archivo hasta el final del archivo
+            //Lo leído se va guardando en un control richTextBox
+            while (reader.Peek() > -1)
+            //Esta linea envía el texto leído a un control richTextBox, se puede cambiar para que
+            //lo muestre en otro control por ejemplo un combobox
+            {
+                //richTextBox1.AppendText(reader.ReadLine());
+                comboBox1.Items.Add(reader.ReadLine());
+            }
+            //Cerrar el archivo, esta linea es importante porque sino despues de correr varias veces el programa daría error de que el archivo quedó abierto muchas veces. Entonces es necesario cerrarlo despues de terminar de leerlo.
+            reader.Close();
+        }
+
         private void Form1_Load(object sender, EventArgs e)
         {
-            comboBox1.SelectedIndex = 0;
-            webBrowser1.GoHome();
+            //comboBox1.SelectedIndex = 0;
+            //webBrowser1.GoHome();
+            Leer("Historial de Navegación.txt");
+
         }
     }
 }
