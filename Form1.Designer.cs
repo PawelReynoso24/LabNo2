@@ -68,7 +68,7 @@
             // 
             this.inicioToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("inicioToolStripMenuItem.Image")));
             this.inicioToolStripMenuItem.Name = "inicioToolStripMenuItem";
-            this.inicioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.inicioToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
             this.inicioToolStripMenuItem.Text = "Inicio";
             this.inicioToolStripMenuItem.Click += new System.EventHandler(this.inicioToolStripMenuItem_Click);
             // 
@@ -120,12 +120,6 @@
             // 
             this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "https://www.msn.com",
-            "https://www.google.com",
-            "https://www.youtube.com",
-            "https://www.facebook.com",
-            "https://www.mesoamericana.edu.gt"});
             this.comboBox1.Location = new System.Drawing.Point(224, 54);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(636, 28);
